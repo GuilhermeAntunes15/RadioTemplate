@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link rel="stylesheet" href="./radio.css" />
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="menu-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="menu-icon">
+                    <img src="Images/radio.png" alt="https://www.freepik.com" />
+                </div>
+                <div class="menu-link">
+                    <a href="radio.html">Radio</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="bg">
+                <img src="https://doodleipsum.com/700/abstract?i=aa232430a10425614dea28ed18c11a9e" alt="">
+            </div>
+            <div class="main-content">
+                <div class="radio-system">
+                    <div class="radio-channel">
+                        <div class="value">0</div>
+                        <input type="range" min="0" max="10" step="1" value="0" id="channel" class="range-style">
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="record">
+                        <div class="label">
+                            <h2>Lofi</h2>
+                            <h3>radio</h3>
+                        </div>
+                        <div class="spindle"></div>
+                    </div>
+                    <div class="arm-container">
+                        <div class="knob weight bottom"></div>
+                        <div class="arm"></div>
+                        <div class="knob weight top">
+                            <button class="play">
+                                <div class="tooltip">click on this</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="speaker">
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                        <div class="hole"></div>
+                    </div>
+                    <div class="knob volume bottom">
+                        <div class="down"></div>
+                        <div class="up"></div>
+                    </div>
+                    <div class="knob volume top"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Guilherme Antunes &#169 2021</p>
+            </div>
+        </footer>
+
+        <!-- partial -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script> -->
+        <script src="./script.js"></script>
+    </body>
+</html>

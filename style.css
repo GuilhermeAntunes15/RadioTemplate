@@ -1,0 +1,288 @@
+@font-face {
+    font-family: Lora;
+    src: url(Fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Libre Franklin;
+    src: url(Fonts/LibreFranklin-VariableFont_wght.ttf);
+}
+
+body {
+    background: #230944;
+    margin: 0 auto;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+
+    background: #4d185f;
+    border-radius: 0px 0px 50px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 82px;
+
+    color: #ffffff;
+
+    margin: 0 210px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+
+    border-radius: 50%;
+
+    background: #751c5c;
+    border: 7px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+
+.menu-icon img {
+    width: 60%;
+    height: 60%;
+}
+
+.main-content {
+    z-index: 8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    /* or 150% */
+
+    text-align: center;
+}
+
+.main-content-right .main-content-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-right {
+    width: 100%;
+    display: flex;
+    margin-right: 50px;
+}
+.main-content-right img {
+    width: 100%;
+    height: 30rem;
+    opacity: 0.08;
+}
+.main-content-right p {
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 50px;
+    color: #ffffff;
+}
+
+.tips-div {
+    display: flex;
+    gap: 10%;
+}
+
+.tips {
+    width: 225px;
+    height: 240px;
+
+    background: #d59fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tips img {
+    top: 0;
+    position: center;
+    width: 80%;
+    height: 80%;
+}
+
+.tips p {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+
+    color: #ffffff;
+    margin: 0;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+.footer-content {
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    background: #4d185f;
+    border-radius: 50px 50px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+
+    color: #ffffff;
+    margin: 0;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #230944;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    opacity: 1;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #51207e;
+}
+
+.menu-icon img {
+    transition: transform 1500ms;
+}
+
+.menu-icon img:hover {
+    transition: transform 1500ms;
+    transform: rotate(360deg);
+}
+
+.menu-link a:hover {
+    transition: 0.5s ease;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
+
+
+@media (max-width: 1126px){
+    .menu{
+        justify-content: center;
+    }
+    .menu-link {
+        font-size: 2rem;
+    }
+
+    .menu-icon {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .main-content{
+        flex-wrap: wrap;
+    }
+
+    .main-content-right{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-content-right img{
+        width: 70%;
+    }
+    .main-content-right p{
+        margin-right: 0;
+        align-self: center;
+        width: 50%;
+    }
+
+    .menu-icon img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+@media (max-width: 620px){
+    .menu{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+        height: 100%;
+    }
+
+    .menu-icon {
+        position: relative;
+    }
+    .main-content-left img{
+        width: 90%;
+    }
+
+    .main-content-right {
+        margin: 0;
+    }
+
+    .main-content-right p{
+        margin: 0 50px;
+    }
+
+    .tips-div{
+        display: grid;
+        gap: 0;
+    }
+
+    .tips{
+        width: 200px;
+        height: 215px;
+        margin-top: 5%;
+    }
+}
